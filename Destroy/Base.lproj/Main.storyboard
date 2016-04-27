@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jlq-W4-MWg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jlq-W4-MWg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icRoboto" translatesAutoresizingMaskIntoConstraints="NO" id="bpn-gW-oiR">
+                                <rect key="frame" x="151" y="55" width="112" height="112"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bpn-gW-oiR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="55" id="JDh-n0-xSH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jlq-W4-MWg" secondAttribute="trailing" id="NyZ-yH-oZK"/>
+                            <constraint firstItem="bpn-gW-oiR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TPV-tF-5a5"/>
+                            <constraint firstAttribute="trailing" secondItem="jlq-W4-MWg" secondAttribute="trailing" id="Xaf-y0-ruA"/>
+                            <constraint firstItem="jlq-W4-MWg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dGy-Vb-gD0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jlq-W4-MWg" secondAttribute="bottom" id="dhh-Gn-t2K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jlq-W4-MWg" secondAttribute="bottom" id="gSZ-Dl-KpX"/>
+                            <constraint firstItem="jlq-W4-MWg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="hGc-Kb-HF3"/>
+                            <constraint firstItem="jlq-W4-MWg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rTo-xw-IIf"/>
+                            <constraint firstItem="jlq-W4-MWg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tV6-lz-o6j"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NyZ-yH-oZK"/>
+                                <exclude reference="rTo-xw-IIf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
@@ -31,5 +53,6 @@
     </scenes>
     <resources>
         <image name="background" width="414" height="736"/>
+        <image name="icRoboto" width="112" height="112"/>
     </resources>
 </document>
