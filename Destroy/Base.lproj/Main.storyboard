@@ -109,15 +109,22 @@
                                 <state key="normal" backgroundImage="icClimate"/>
                                 <connections>
                                     <action selector="climatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEw-QI-TDm"/>
+                                    <segue destination="2hy-Mi-qsp" kind="presentation" id="UMf-5m-CJA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz5-PZ-qTZ" userLabel="ButtonApathy">
                                 <rect key="frame" x="270" y="375" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icApathy"/>
+                                <connections>
+                                    <segue destination="Az7-uf-Ae2" kind="presentation" id="6YO-I6-ESX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQo-Gt-w0X" userLabel="ButtonWar">
                                 <rect key="frame" x="146" y="375" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icWar"/>
+                                <connections>
+                                    <segue destination="Uch-de-w7r" kind="presentation" id="AMZ-cY-KNH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sustained Atmospheric Change" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-iY-EMS">
                                 <rect key="frame" x="4" y="471" width="120" height="40"/>
@@ -152,14 +159,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-pF-rdQ" userLabel="ButtonNuke">
                                 <rect key="frame" x="145" y="529" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icNuke"/>
+                                <connections>
+                                    <segue destination="kg7-Pf-ROg" kind="presentation" id="vCt-mh-mLg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6p-KH-R5O" userLabel="ButtonGreed">
                                 <rect key="frame" x="269" y="529" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icGreed"/>
+                                <connections>
+                                    <segue destination="e1d-Iz-XtW" kind="presentation" id="N1t-0t-D8g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyc-fO-1Tr" userLabel="ButtonFamine">
                                 <rect key="frame" x="21" y="529" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icFood"/>
+                                <connections>
+                                    <segue destination="Nn7-Eg-dez" kind="presentation" id="xhs-Hi-6fg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqE-ze-3gT">
                                 <rect key="frame" x="251" y="625" width="120" height="40"/>
@@ -281,6 +297,120 @@ Famine</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0ni-UH-bFa">
+            <objects>
+                <viewController id="Az7-uf-Ae2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FDJ-Zp-uG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ama-ra-r8v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sqd-jc-ngz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0K-kx-cKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5" y="-641.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cfj-Ra-gwB">
+            <objects>
+                <viewController id="e1d-Iz-XtW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KCG-uY-lQr"/>
+                        <viewControllerLayoutGuide type="bottom" id="4MR-Cn-dvp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4zN-WF-KpR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ub-IA-l0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.5" y="1479.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3WS-Rm-Bjw">
+            <objects>
+                <viewController id="Uch-de-w7r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZ5-QM-FWx"/>
+                        <viewControllerLayoutGuide type="bottom" id="CbE-Ld-5aT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Toy-Zy-aOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUH-O4-taS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825.5" y="454.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6oj-eC-k38">
+            <objects>
+                <viewController id="2hy-Mi-qsp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zba-Og-amw"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyh-Ne-UYx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w0G-5k-0sS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOY-ya-0hO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091.5" y="-1101.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hcm-5K-bi2">
+            <objects>
+                <viewController id="Nn7-Eg-dez" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aGp-9A-ta7"/>
+                        <viewControllerLayoutGuide type="bottom" id="aY3-H7-HQj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGk-H3-5Bx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cv-E6-ieE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140.5" y="1731.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="udf-Gm-e9w">
+            <objects>
+                <viewController id="kg7-Pf-ROg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nyy-8s-weh"/>
+                        <viewControllerLayoutGuide type="bottom" id="eny-Og-nP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="irJ-Bt-N6f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aas-EP-w4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652.5" y="1639.5"/>
         </scene>
     </scenes>
     <resources>
