@@ -118,6 +118,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQo-Gt-w0X" userLabel="ButtonWar">
                                 <rect key="frame" x="146" y="375" width="84" height="84"/>
                                 <state key="normal" backgroundImage="icWar"/>
+                                <connections>
+                                    <segue destination="Rz0-Jm-4bl" kind="showDetail" id="d1l-6U-wKA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sustained Atmospheric Change" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-iY-EMS">
                                 <rect key="frame" x="4" y="471" width="120" height="40"/>
@@ -281,6 +284,38 @@ Famine</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Slo-xJ-Iei">
+            <objects>
+                <viewController id="Rz0-Jm-4bl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tZY-sd-VSZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="QeV-tf-iVy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tjp-ZC-tIU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4j-rX-gfd">
+                                <rect key="frame" x="164" y="612" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7Qs-Yo-QWd"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFJ-nJ-mIF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlL-Bd-Ccz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.5" y="356.5"/>
         </scene>
     </scenes>
     <resources>
